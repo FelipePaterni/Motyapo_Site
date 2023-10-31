@@ -1,6 +1,6 @@
 <?php
 
-//estabelece conexão com banco de dados
+//estabelece conexão com banco de dados( feito pelo meu professor)
 class Conectar extends PDO
 { //php data object
 
@@ -9,7 +9,7 @@ class Conectar extends PDO
     private $host = "localhost";
     private $usuario = "root";
     private $senha = "";
-    private $db = "Motyapo";
+    private $db = "motyapo";
     private $pdo = "";
 
     public function __construct()
