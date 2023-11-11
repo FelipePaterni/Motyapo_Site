@@ -1,0 +1,313 @@
+.fonte1 {
+  font-family: "Satisfy", sans-serif !important;
+  margin-top: 9px;
+}
+
+body {
+  font-family: "Sarala", sans-serif !important;
+
+}
+
+#imgGG {
+background-image: url('https://www.stardewvalley.net/wp-content/themes/stardewvalley/images/parallax/parallax5.png');
+background-position: bottom center;
+}
+.imagems {
+font-family: Satisfy;
+padding-top: 40px ;
+background-image: url('../img/faixa1.png');
+background-size: cover;
+image-rendering: pixelated;
+height: 165px;
+
+}
+.pixel {
+image-rendering: pixelated;  
+}
+
+.config{
+margin: 10px, 0, 90px, 5px;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-align: center;
+align-items: center;
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: #f5f5f5;
+}
+
+
+.form-signin {
+width: 100%;
+max-width: 330px;
+padding: 15px;
+margin: auto;
+
+}
+.form-signin .form-control {
+position: relative;
+box-sizing: border-box;
+height: auto;
+padding: 10px;
+font-size: 16px;
+}
+.form-signin .form-control:focus {
+z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  }
+.form-signin input[type="email"] {
+margin-bottom: -1px;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+margin-bottom: 20px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+
+.FontTitulo{
+font-family: "Satisfy" ,Arial, Helvetica, sans-serif;
+}
+.FontTexto{
+font-family: "Sarala" ,Arial, Helvetica, sans-serif;
+}
+
+/*_____________NAVBAR AUTERAÇÕES______________*/
+
+.nav-item:hover{
+color:  rgba(8, 1, 64, 1);
+text-decoration: overline;
+}
+
+
+
+
+
+
+.wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+
+
+	margin: 1rem auto;
+
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+
+.image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	
+	background-size: contain;
+  background-repeat: no-repeat;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.img1{
+  background-image: url("../img/repr_amazonia.png");
+  image-rendering: pixelated;
+}
+
+.bgo1{
+  background:   #74DB79;
+}
+.img2{
+  background-image: url("../img/repr_deserto.png");
+  image-rendering: pixelated;
+}
+.bgo2{
+  background:   #FDF5B0;
+}
+.img3{
+  background-image: url("../img/repr_cidade.png");
+  image-rendering: pixelated;
+}
+.bgo3 {
+  background:   #F1A7C5;
+}
+.img4{
+  background-image: url("../img/repr_cogumelos.png");
+  image-rendering: pixelated;
+}
+.bgo4 {
+  background: #FFADCF;
+}
+.img5{
+  background-image: url("../img/repr_muralhas.png");
+  image-rendering: pixelated;
+}
+.bgo5 {
+  background:#727F9E;
+}
+.text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding: 3vmin 4vmin;
+  box-shadow: none;
+	background: #00000003 ;
+
+	
+}
+
+
+
+.wrap:hover .overlay
+ {
+	transform: translateX(-120vmin);
+}
+.wrap:hover .image-content {
+	width: 0%;
+}
+.wrap:hover .overlay-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.delay {
+  animation-delay: 0.3s;
+}
+
+
+/*_____________CARTAS______________*/
+
+  .carta{
+    transform-style: preserve-3d;
+    transition: all 1s;
+    width: 250px;
+    height: 320px;
+    background-color: #ffffff00;
+    position: absolute;
+  }
+  .carta:hover{
+    transform: rotateY(180deg);
+  }
+  .mc:hover{
+    position: relaive;	
+   
+    }
+    
+  .frente{
+    
+      background-color: #f3f0f5;
+      font-family: sarala;  
+      backface-visibility: hidden;
+      position: absolute;
+
+  }
+
+  .costa{
+  
+
+      backface-visibility: hidden;
+      background-color: #98e1ce;
+      color:  #333;
+      transform: rotateY(180deg);
+      font-family: sarala;
+      position: absolute;
+      height: 68%;
+      
+  }
+.thecard{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: all 1s;
+  background-color: #fff;
+  display: flex;
+}
+
+
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+.thefront{
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 10vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #f3f0f5;
+  color:  #333;
+  font-family: sarala;
+}
+
+
+
+.theback{
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 10vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #98e1ce;
+  color:  #333;
+  transform: rotateY(180deg);
+  font-family: sarala;
+}

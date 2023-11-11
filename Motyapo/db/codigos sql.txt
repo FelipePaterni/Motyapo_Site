@@ -1,19 +1,21 @@
 CREATE DATABASE motyapo;
 
+CREATE TABLE sugestao(
+  id int  AUTO_INCREMENT PRIMARY KEY ,
+  nome varchar(200),
+ sugestao text,
+  dataPost varchar(10)
+ );
 
 CREATE TABLE usuario (
-  id_user int  AUTO_INCREMENT PRIMARY KEY ,
-  nome_user varchar(200),
-  email_user varchar(200),
-  senha_user varchar(100));
+  id int  AUTO_INCREMENT PRIMARY KEY ,
+  nome varchar(200),
+  email varchar(200),
+  senha varchar(300),
+  adm BOOLEAN NOT NULL,
+  novidade BOOLEAN NOT NULL );
 
 
-CREATE TABLE adm (
-  id_adm int  AUTO_INCREMENT PRIMARY KEY ,
-  nome_adm varchar(200),
-  email_adm varchar(200),
-  senha_adm varchar(100)
-);
 
 CREATE table postagens(
     id int AUTO_INCREMENT PRIMARY KEY,
@@ -22,5 +24,9 @@ CREATE table postagens(
     data varchar(10),
     image varchar(500),
     id_adm int ,
-foreign key (id_adm) references adm(id_adm));
+foreign key (id_adm) references usuario(id));
     
+
+INSERT INTO usuario(nome,email, senha, adm, novidade) VALUES ("Teste","teste@teste.com","40bd001563085fc35165329ea1ff5c5ecbdbbeef", 0, 1);
+
+INSERT INTO usuario ( nome, email, senha, adm, novidade) VALUES ("Felipe", "felipe.chaves2@etec.sp.gov.br", "3b0a4e83633a7d63566ebb58e15ee6f093d6390d", 1, 0);

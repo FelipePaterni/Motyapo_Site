@@ -1,3 +1,5 @@
+
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
@@ -10,6 +12,6 @@
 <meta name="description" content="Site para promover um jogo">
 <meta name="author" content="Team Mushmelo">
 
-<link rel="stylesheet" href="../css/Motyapo.css">
+<link href="../css/estilo.css" rel="stylesheet">
 <link rel="icon" href="../img/logo2.png" sizes="64x64" type="image/png">
 <title>Motyapo</title>
